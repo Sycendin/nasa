@@ -21,35 +21,20 @@
             <span class="background"></span>
             <!-- results nav -->
             <span class="navigation-items" id="resultsNav">
-                <h3 class="clickable">Favorites</h3>
+                <h3 class="clickable" onclick="updateDOM('favorites')">Favorites</h3>
                 <h3>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</h3>
-                <h3 class="clickable">Load More</h3>
+                <h3 class="clickable" onclick="updateDOM('getNasaPictures')">Load More</h3>
             </span>
             <!-- Favorites new -->
-            <span class="navigation-items hidden" id="FavoritesNav">
-                <h3 class="clickable">Load more NASA images</h3>
+            <span class="navigation-items hidden" id="favoritesNav">
+                <h3 class="clickable" onclick="updateDOM('getNasaPictures')">Load more NASA images</h3>
             </span>
         </div>
         <!-- Images container-->
         <div class="images-container">
-            <div class="card">
-                <a href="" title= "View full image" target="_blank">
-                    <img src="https://apod.nasa.gov/apod/image/2202/VenusMoonSamePhase.jpg" alt="NASA picture of the day" class="card-img-top">
-                </a>
-                <div class="card-body">
-                    <h5 class="card-title">Title of image</h5>
-                    <p class="clickable">Add to favorites</p>
-                    <p class="card-text">lorem and all that adding some more text to test this</p>
-                    <small class="text-muted">
-                        <strong>12-12-2424</strong>
-                        <span>Copyright Info</span>
-                    </small>
-                </div>
-            </div>
-        </div>
     </div>
     <!-- Save confirmation -->
-    <div class="save-confirmed hidden">
+    <div class="save-confirmed" hidden>
         <h1>ADDED!</h1>
     </div>
     <!-- Script -->
